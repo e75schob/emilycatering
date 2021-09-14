@@ -1,24 +1,62 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Emily's Catering in Rochester, MN, since 2015.  Quality Catering">
   <title>Emily's Catering</title>
-  <link rel="stylesheet" href="index3.css" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="resources/CSS/index3.css" type="text/css"/>
+ 
 </head>
+
 
 <body>
 
   <!-- Header -->
 
-  <header class="flex-container">
-    <img src="Picture1.svg"/>
-    <nav>
-      <span><a href="index.html">Home</a></span>
-      <span><a href="index2.html">Photos </a></span>
-      <span><a href="index3.html">Menu and Testimonials</a></span>
-    </nav>
-  </header>
+    <!-- Header with class header that will work as container for navbar-->
+
+    <header class="header">
+      <img src="resources/CSS/images3/image.png"/>
+     
+     
+    <!-- nav with the class of navbar-->
+      <nav class="navbar">
+     
+     
+    <!-- a link with class of nav-logo-->
+        <a href="#" class="nav-logo">Emily's Catering</a>
+    
+    <!-- ul with the class nav-menu-->
+      <ul class="nav-menu">
+       <!-- inside the ul we have 4 lis with the class of nav-item
+        inside each nav-item we have a link with the class of nav-link-->
+  
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+          <a href="#" class="nav-link">Photos</a>
+      </li>
+      <li class="nav-item">
+          <a href="#" class="nav-link">Services Offered</a>
+      </li>
+      <li class="nav-item">
+          <a href="#" class="nav-link">Order Catering Now</a>
+      </li>
+  
+      </ul>
+  
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+  
+      </div>
+  
+      </nav>
+    </header>
 
  
     <!-- Main Content Container -->
@@ -29,44 +67,6 @@
       <!-- Store Section -->
   
    
-  
-      <!-- Store Section -->
-  
-      <div id="store">
-        
-        <div class="flex-container items">
-          <div class="item2">
-            <h1>Emily's Catering Menu</h1>
-            <iframe src="Emily's Catering Menu.pdf"width="100%" height="500px">
-            </iframe>
-             <!-- <img src="resources/CSS/images3/P1015001.JPG"/>
-        <div class="text1">
-       <h2>Emily's Catering</h2>
-        
-        </div>    
-          </div>  
-  
-                 
-          <div class="item2">
-          
-             <img src="resources/CSS/images3/P1014967.JPG"/>
-  
-               
-             <div class="text1">
-            
-            <h2>Catering for you</h2>
-    
-          
-          </div> 
-           
-           </div>  
-        -->
-           
-           </div> 
-         </div>  
-       
-        </div>
-  
   
   
   
@@ -119,25 +119,35 @@
         
   <!--Announcement section-->
  <!-- Main Content Container -->
+<!-- Mission Section -->
 
- <div class="main">
+<div id="mission">
+  <h1>Testimonials</h1>
+  <div class="flex-container info">
+    <div class="item2">
+      
+   <div class="color">
+  <div class="text2">
+    
+      <p>We had Emily cater an employee meeting so we needed something that appealed to a large/diverse. Emily delivered what we needed at a great price.  We will definitely be using again. She was very flexible. - Kristin H. and Jenni B. </p>
+  </div>
+  </div>    
+    </div>  
 
-  <!-- Mission Section -->
-
-  <div id="mission">
-    <h1>Testimonials</h1>
-    <div class="flex-container info">
-      <div class="item4">
-        
-      <p class="testify">We had Emily cater an employee meeting so we needed something that appealed to a large/diverse audience. The pulled pork sandwiches were amazing and the mac-n-cheese was a HUGE hit! Emily was great to work with in proposing menu options and working with us to find exactly what we needed and at a great price. We will be using again. She was very flexible - Jenni B. and Kristin H.</p>
-      <p class="testify">We enjoyed a nice variety of tasty and creative cuisine. Especially good for a special event celebration or recognition party - John T.</p>
-      <p class="testify">A perfect balance of pork and barbecue sauce smoked to perfection.-Elizabeth B.</p>
-      <p class="testify">One of the top five meals I’ve ever eaten, and with just the right amount of Mediterranean and local ingredients. I’m getting hungry just thinking about it. - Mahamed M.</p>
-
+   
+    <div class="item2">
+      
+      <div class="color">
+     <div class="text2">
        
-      </div>  
-
+         <p>We enjoyed a lot of tasty and creative cuisine.  Especially good for a special event or a recognition party.  -John T </p>
+     </div>    
+       </div>   
+    
      
+   </div>  
+     </div> 
+ 
       <!--<div class="item1">
         
         <img src="resources/CSS/images3/P1015033.JPG"/>
@@ -167,24 +177,16 @@
  <!-- Form Section -->   
 
 
-<!--The action attribute defines the location (URL) where the form's collected data should be sent when it is submitted.>
 
-<!--The method attribute defines which HTTP method to send the data with (usually get or post).>
-<!--The <input> tag is an empty element, meaning that it doesn't need a closing tag..>
-
-<!--<input/email>, which defines a single-line text field that only accepts a well-formed e-mail address..>
 
     <!-- Contact Section -->
-    <div id="contact">
+    <div id="contactus">
       <h2>Emily's Catering</h2>
-      <h5>e75schob@gmail.com</h5>
-      <h5>612-968-4476</h5>
-      <a href="https://www.facebook.com/EmilyCatering">Follow me on facebook</a>
+      <h3>e75schob@gmail.com</h3>
+      <h3>612-968-4476</h3>
     </div>
 
     <!-- Footer Section -->
     <footer>
-      <h5>copyright Emily's Catering 2020</h5>
+      <h3>copyright Emily's Catering 2021</h3>
     </footer> 
-  </body>
-</html>
