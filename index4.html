@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Emily's Catering in Rochester, MN, since 2015.  Quality Catering">
+  <title>Emily's Catering</title>
+  <link rel="stylesheet" href="resources/CSS/index3.css" type="text/css"/>
+ <script src= "store.js" defer></script>
+</head>
+
+
+<!--Header Section-->
+  <!-- Header -->
+
+
+  
+  <!-- ul with the class nav-menu-->
+    <!--<ul class="nav-menu">
+     inside the ul we have 4 lis with the class of nav-item
+      inside each nav-item we have a link with the class of nav-link
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Photos</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Services Offered</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Order Catering Now</a>
+    </li>
+
+    </ul>-->
+
+   
+
+    </nav>
+  </header>
+
+<body>
+  
+  
+  
+  <!-- Header -->
+  <header class="flex-container1">
+   <img src="resources/CSS/images3/Picture1.svg" alt="Emily's Catering logo"/>
+       <nav>
+      <nav class="navbar">
+
+         <!-- a link with class of nav-logo-->
+      <a href="#" class="nav-logo">Emily's Catering</a>
+
+        <!-- ul with the class nav-menu-->
+    <ul class="nav-menu">
+   
+      <li class="nav-item">
+        
+        <!--<a href="#" class="nav-link">Home</a>-->
+        <div class="dropdown">
+        <button class="dropbtn" id="text" class="nav-link">Delivery <i class="fa fa-caret-down"></i>
+        </button>
+   
+
+     <div id="myDropdown1" class="dropdown-content">
+      <center><h3>Order Type</h3></center>    
+         <center>   <button id="1"> Delivery</button>       
+           <button id="2"> Takeout</button> </center>
+     <div id="myDIV"> </div>   
+ </div> 
+</div>
+   
+    </li>
+
+
+    <li class="nav-item">
+        
+      <!--<a href="#" class="nav-link">Home</a>-->
+      <div class="dropdown">
+      <button class="dropbtn">Rochester, MN, 55901
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="myDropdown2" class="dropdown-content"> 
+        <h4>Update address</h4>
+
+        <form id="first"name="myForm" action="/action_page.php" method="post">
+          <br>
+           <input type="text" id="zipCode" name="address" required>
+         <input type="submit" id="clickme" value="Submit">
+               
+                </form>  
+            
+             </div> 
+            </div>
+ 
+  </li>
+  
+
+
+  
+  <li class="nav-item">
+
+   
+   <div class="dropdown">
+  
+     <button class="dropbtn">Add Event Date
+     <i class="fa fa-caret-down"></i>
+   </button>
+   
+     <div id="myDropdown3"class="dropdown-content">
+   
+     <form id="second" name="dateTim">
+     
+       <div class="nativeDatePicker">
+       <label for="bday">Enter the date of order:</label>
+       <input type="date" id="bday" name="bday" required>
+       <span class="validity"></span>
+     </div>
+       
+       
+     <p class="fallbackLabel">Enter the date of order:</p>
+     <div class="fallbackDatePicker">
+       <span>
+         <label for="day">Day:</label>
+         <select id="day" name="day">
+         </select>
+       </span>
+      
+       
+       <span>
+         <label for="month">Month:</label>
+         <select id="month" name="month">
+           <option selected>January</option>
+           <option>February</option>
+           <option>March</option>
+           <option>April</option>
+           <option>May</option>
+           <option>June</option>
+           <option>July</option>
+           <option>August</option>
+           <option>September</option>
+           <option>October</option>
+           <option>November</option>
+           <option>December</option>
+         </select>
+       
+       
+       </span>
+      
+       <span>
+         <label for="year">Year:</label>
+         <select id="year" name="year">
+         </select>
+       </span>
+     
+ 
+ 
+ 
+   </div>
+       <br>
+    
+       
+        <div>    
+       <label for="appt">Choose a time for your order:</label>
+ 
+ <input type="time" id="appt" name="appt"
+        min="09:00" max="22:00" required>
+ 
+ <small> Hours are 9am to 10pm</small>
+ <!--Also bear in mind that if such data is submitted via HTTP GET, the colon character will need to be escaped for inclusion in the URL parameters, e.g. partydate=
+ 2017-06-01T08%3A30. See encodeURI() for one way to do this.-->
+       </div>
+    <input type="button" id="clickeh" value="Submit">
+       </form>
+  </div>
+</li><!--li class "nav item"-->
+      </ul><!--Ul class "nav menu"-->
+      
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+  
+      </div>
+    </nav> 
+        
+      
+    </header>
+  
+ 
+ 
+ <!-- flex-container -->
+      
+    <div id="main">
+   
+        <div class="flex-container1">
+       
+          <section class="container content-section-left">
+            
+            <h2 class="section-header">MENU</h2>
+          
+          <div class="shop-items">
+             
+                
+            <div class="shop-item">
+                     <div class="shop-item-title">Creme Brulee</div>
+                     <img class="shop-item-image" src="https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2019/02/Homemade-Creme-Brulee-2.jpg?w=745&ssl=1" height=150px width=170px>
+                     <div class="shop-item-details">
+                         <div class="shop-item-price">$12.99</div>
+                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                     </div>
+                 </div>
+           
+            <div class="shop-item">
+                     <div class="shop-item-title">Creme Brulee</div>
+                     <img class="shop-item-image" src="https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2019/02/Homemade-Creme-Brulee-2.jpg?w=745&ssl=1" height=150px width=170px>
+                     <div class="shop-item-details">
+                         <div class="shop-item-price">$12.99</div>
+                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                     </div>
+                 </div>
+            
+                 
+            <div class="shop-item">
+                     <div class="shop-item-title">Creme Brulee</div>
+                     <img class="shop-item-image" src="https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2019/02/Homemade-Creme-Brulee-2.jpg?w=745&ssl=1" height=150px width=170px>
+                     <div class="shop-item-details">
+                         <div class="shop-item-price">$12.99</div>
+                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                     </div>
+                 </div>
+                 
+              
+               <div class="shop-item">
+                     <div class="shop-item-title">Carrot Cake</div>
+                     <img class="shop-item-image" src="https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2019/02/Homemade-Creme-Brulee-2.jpg?w=745&ssl=1"  height=150px width=170px>
+                     <div class="shop-item-details">
+                         <div class="shop-item-price">$14.99</div>
+                         <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                     </div>
+                 </div>
+               
+                 
+               <div class="shop-item">
+                     <div class="shop-item-title">Baklava</div>
+                     <img class="shop-item-image" src="https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2019/02/Homemade-Creme-Brulee-2.jpg?w=745&ssl=1" height=150px width=170px>
+                     <div class="shop-item-details">
+                         <div class="shop-item-price">$9.99</div>
+                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                     </div>
+                 </div>
+               
+               
+                 <div class="shop-item">
+                     <div class="shop-item-title">Creme Brulee</div>
+                     <img class="shop-item-image" src="https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2019/02/Homemade-Creme-Brulee-2.jpg?w=745&ssl=1" height=150px width=170px>
+                     <div class="shop-item-details">
+                         <div class="shop-item-price">$19.99</div>
+                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                     </div>
+                 </div>
+  
+        
+    <div class="shop-item">
+                     <div class="shop-item-title">Creme Brulee</div>
+                     <img class="shop-item-image" src="https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2019/02/Homemade-Creme-Brulee-2.jpg?w=745&ssl=1" height=150px width=170px>
+                     <div class="shop-item-details">
+                         <div class="shop-item-price">$19.99</div>
+                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+      </div>
+            </div>
+                       
+            <div class="shop-item">
+                     <div class="shop-item-title">Creme Brulee</div>
+                     <img class="shop-item-image" src="https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2019/02/Homemade-Creme-Brulee-2.jpg?w=745&ssl=1" height=150px width=170px>
+                     <div class="shop-item-details">
+                         <div class="shop-item-price">$19.99</div>
+                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+      </div>
+            </div>
+            <div class="shop-item">
+                     <div class="shop-item-title">Creme Brulee</div>
+                     <img class="shop-item-image" src="https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2019/02/Homemade-Creme-Brulee-2.jpg?w=745&ssl=1" height=150px width=170px>
+                     <div class="shop-item-details">
+                         <div class="shop-item-price">$19.99</div>
+                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+      </div>
+            </div>
+            <div class="shop-item">
+                     <div class="shop-item-title">Creme Brulee</div>
+                     <img class="shop-item-image" src="https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2019/02/Homemade-Creme-Brulee-2.jpg?w=745&ssl=1" height=150px width=170px>
+                     <div class="shop-item-details">
+                         <div class="shop-item-price">$19.99</div>
+                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+      </div>
+            </div>
+            
+            <div class="shop-item">
+                     <div class="shop-item-title">Creme Brulee</div>
+                     <img class="shop-item-image" src="https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2019/02/Homemade-Creme-Brulee-2.jpg?w=745&ssl=1" height=150px width=170px>
+                     <div class="shop-item-details">
+                         <div class="shop-item-price">$19.99</div>
+                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+      </div>
+            </div>
+            
+            <div class="shop-item">
+                     <div class="shop-item-title">Creme Brulee</div>
+                     <img class="shop-item-image" src="https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2019/02/Homemade-Creme-Brulee-2.jpg?w=745&ssl=1" height=150px width=170px>
+                     <div class="shop-item-details">
+                         <div class="shop-item-price">$19.99</div>
+                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+      </div>
+            </div>
+            
+            <div class="shop-item">
+                     <div class="shop-item-title">Creme Brulee</div>
+                     <img class="shop-item-image" src="https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2019/02/Homemade-Creme-Brulee-2.jpg?w=745&ssl=1" height=150px width=170px>
+                     <div class="shop-item-details">
+                         <div class="shop-item-price">$19.99</div>
+                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+      </div>
+            </div>
+            
+            <div class="shop-item">
+                     <div class="shop-item-title">Creme Brulee</div>
+                     <img class="shop-item-image" src="https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2019/02/Homemade-Creme-Brulee-2.jpg?w=745&ssl=1" height=150px width=170px>
+                     <div class="shop-item-details">
+                         <div class="shop-item-price">$19.99</div>
+                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+      </div>
+            </div>
+                    <div class="shop-item">
+                     <div class="shop-item-title">Creme Brulee</div>
+                     <img class="shop-item-image" src="https://i1.wp.com/www.livewellbakeoften.com/wp-content/uploads/2019/02/Homemade-Creme-Brulee-2.jpg?w=745&ssl=1" height=150px width=170px>
+                     <div class="shop-item-details">
+                         <div class="shop-item-price">$19.99</div>
+                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                      </div>
+            </div>
+                     </div><!--end of shop items-->       
+                
+                 
+                       </section><!--end of container content-section-left-->       
+       
+          </div>  <!--end of flex-container section-->
+           
+                <div class="flex-container1">
+          
+          <section class="container content-section-right">
+      
+          <div class="cart">
+             
+            
+            <h2 class="section-header">CART</h2>
+             <div class="cart-row">
+                 <span class="cart-item cart-header cart-column">ITEM</span>
+                 <span class="cart-price cart-header cart-column">PRICE</span>
+                 <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+             </div>
+           
+            <div class="cart-items">
+ 
+            </div>
+        <div class="col1">
+      
+        <div class="cart-total-title"></div>
+               <label class="align">Subtotal</label>
+                 <span class="subtotal-totals-value">$0</span>
+       <br><br>
+       <div class="cart-total-title"></div>
+               <label class="align">Restaurant Delivery Fee</label>
+                 <span class="fee-totals-value">$0</span>
+  
+            <br><br>
+ <div class="cart-total-title"></div>
+               <label class="align">Sales Tax</label>
+                 <span class="tax-totals-value">$0</span>
+            </div>
+ 
+ <br>
+ <div class="cart-total-title"></div>
+               <!--<label class="align">Tip</label>-->
+ 
+ <label>Choose custom tip ($): </label><input type="number" min="1" max="500" id="customTip" value=""> 
+            
+       <button class="customTipBtn">Save Tip</button>
+ <span class="tip-totals-value">$0</span>
+ <br><br>
+           
+            <div class="cart-total-title"></div> 
+            
+            <label>Select Tip Percentage: </label>
+ 
+            <button class="customPctBtn">10%</button>
+            
+             <button class="customPctBtn">20%</button>
+            
+             <button class="customPctBtn">30%</button>
+ 
+        <span class="tip_pct-totals-value">$0</span> 
+ <br><br>
+       
+            <div class="cart-total">
+                 <label class="align">Grand Total</label>
+                 <span class="totals-value" id="cart-total-price">$0</span>  </div>
+            
+             
+            
+             <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            </div>
+ 
+            
+         </div>
+ <!--end of cart section-->
+                  
+                  
+          </section><!--end of container content-section-right-->
+              
+            </div>  <!--end of flex-container1 section-->
+           
+      
+            </div><!--end of main section-->
+     
+         
+ 
+  <!-- Footer Section -->
+     <footer>
+       <h5>copyright Emily's Catering 2021</h5>
+     </footer> 
+ </body>
+ </html>
+ 
