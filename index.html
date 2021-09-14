@@ -1,44 +1,78 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta name="description" content="Emily's Catering in Rochester, MN, since 2015.  Quality Catering">
   <title>Emily's Catering</title>
-  <link rel="stylesheet" href="index3.css" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="resources/CSS/index3.css" type="text/css"/>
+ 
 </head>
+
 
 <body>
 
-  <!-- Header -->
+  <!-- Header with class header that will work as container for navbar-->
 
-  <header class="flex-container">
-    <img src="Picture1.svg"/>
-    <nav>
-      <span><a href="index.html">Home</a></span>
-      <span><a href="index2.html">Photos </a></span>
-      <span><a href="index3.html">Menu and Testimonials</a></span>
+  <header class="header">
+    <img src="CSS/images3/image.png"/>
+   
+   
+  <!-- nav with the class of navbar-->
+    <nav class="navbar">
+   
+   
+  <!-- a link with class of nav-logo-->
+      <a href="#" class="nav-logo">Emily's Catering</a>
+  
+  <!-- ul with the class nav-menu-->
+    <ul class="nav-menu">
+     <!-- inside the ul we have 4 lis with the class of nav-item
+      inside each nav-item we have a link with the class of nav-link-->
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Photos</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Services Offered</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Order Catering Now</a>
+    </li>
+
+    </ul>
+
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+
+    </div>
+
     </nav>
   </header>
 
  
     <!-- Main Content Container -->
 
-    <div class="main">    
-      
-
-      <!-- Store Section -->
+    <div class="main1">    
   
-   
   
-      <!-- Store Section -->
+      <!-- Company Introduction Store Section -->
   
       <div id="store">
         
-        <div class="flex-container items">
-          <div class="item2">
+        <div class="flex-container info">
+          <div class="item1">
             
-              <img src="P1015001.JPG"/>
+              <img src="CSS/images3/P1015001.JPG"/>
         <div class="text1">
        <h2>Emily's Catering</h2>
         
@@ -46,21 +80,28 @@
           </div>  
   
                  
-          <div class="item2">
+          <div class="item1">
           
-             <img src="P1014967.JPG"/>
+             <img src="CSS/images3/P1014967.JPG"/>
   
                
              <div class="text1">
             
-            <h2>Catering for you</h2>
+            
     
           
           </div> 
            
            </div>  
            
-           
+           <div class="item1">
+            <img src="CSS/images3/P1014755.jpg">
+         
+      <div class="text1">
+     <h2>Catering for you</h2>
+      
+      </div>    
+        </div> 
            </div> 
          </div>  
        
@@ -72,46 +113,35 @@
   
   <!-- Main Content Container -->
 
-  <div class="main">
+  <div class="main1">
 
     <!-- Mission Section -->
 
     <div id="mission">
       <h1>About Us</h1>
       <div class="flex-container info">
-        <div class="item1">
+        <div class="item2">
           
-        <img src="P1014944.JPG"/>
-      <div class="text">
-        <h3>What we can offer you</h3>
-          <p>Beginning in 2015, the idea to set up catering in Rochester, MN emerged. Since then Emily's Catering was born.  The idea was to have catering services focused on primarily American favorites that can be provided for events ranging from smaller casual events to more official events. It's a common experience to bond over food, and the desire is to provide quality food to enhance your event.  </p>
-      
+       <div class="color">
+      <div class="text2">
+        
+          <p>Beginning in 2015, the idea to set up catering in Rochester, MN emerged.  Since then Emily's Catering was born.  We strive to enhance your event with quality food to enhance your event. </p>
+      </div>
       </div>    
         </div>  
 
        
-        <div class="item1">
+        <div class="item2">
           
-          <img src="P1015033.JPG"/>
+          <div class="color">
+         <div class="text2">
+           
+             <p>We can do delivery or pickup.  You can call 612-968-4476 to place an order. </p>
+         </div>
+         </div>    
+           </div>   
         
-       </div>  
-        
-        <div class="item1">
-        
-           <img src="PSX_20201023_164137.jpg"/>
-
-             
-           <div class="text">
-          
-          <h3>Let us plan your next event</h3>
-          <p>We strive to work with you, whether it is graduation, weddings, or a casual get together</p>
-        
-        </div> 
          
-         </div>  
-         
-         
-         </div> 
        </div>  
          </div> 
          
@@ -119,36 +149,35 @@
   <!--Announcement section-->
  <!-- Main Content Container -->
 
- <div class="main">
+ <div class="main1">
 
   <!-- Mission Section -->
 
-  <div id="mission">
+  <div id="contact">
     <h1>Order Catering Now</h1>
     <div class="flex-container info">
-      <div class="item1">
+      <div class="item3">
         
-      <img src="PSX_20201023_164137.jpg"/>
-    <div class="text">
-      <h3>Call or email to place your catering order</h3>
-        <p>612-968-4476 or e75schob@gmail.com </p>
+      <img src="CSS/images3/P1014944.JPG"/>
+    <div class="text3">
+      Contact us right away for your next event
     
     </div>    
       </div>  
 
      
-      <div class="item1">
+      <div class="item3">
         
-        <img src="P1015033.JPG"/>
+        <img src="CSS/images3/P1015033.JPG"/>
       
      </div>  
       
-      <div class="item1">
+      <div class="item3">
       
-         <img src="PSX_20201023_164307.jpg"/>
+         <img src="CSS/images3/PSX_20201023_164137.jpg"/>
 
            
-         <div class="text">
+         <div class="text3">
         
         <h3>Let us plan your next event</h3>
         <p>We strive to work with you, whether it is graduation, weddings, or a casual get together</p>
@@ -164,9 +193,7 @@
        
       
  
- <!-- Form Section -->   
-
-
+ 
 <!--The action attribute defines the location (URL) where the form's collected data should be sent when it is submitted.>
 
 <!--The method attribute defines which HTTP method to send the data with (usually get or post).>
@@ -175,15 +202,16 @@
 <!--<input/email>, which defines a single-line text field that only accepts a well-formed e-mail address..>
 
     <!-- Contact Section -->
-    <div id="contact">
+    <div id="contactus">
       <h2>Emily's Catering</h2>
-      <h5>e75schob@gmail.com</h5>
-      <h5>612-968-4476</h5>
+      <h3>e75schob@gmail.com</h3>
+      <h3>612-968-4476</h3>
     </div>
 
     <!-- Footer Section -->
     <footer>
-      <h5>copyright Emily's Catering 2020</h5>
+      <h3>copyright Emily's Catering 2021</h3>
     </footer> 
+
   </body>
 </html>
