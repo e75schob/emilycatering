@@ -1,222 +1,336 @@
-/* Universal Styles */
+/*Universal Styles*/
 
-body {
+* {
   margin: 0;
-  font-family: "Helvetica", sans-serif;
-  color: seashell;
-  background-color: black;
-  font-size: 22px;
-  text-align: center;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font: inherit;
+  
+}
+
+html {
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  list-style: none;
 }
 
 a {
-  color: seashell;
-}
-
-h2,
-h3,
-h4 {
-  margin: 0;
-  padding: 10px;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Header Section */
-
-header {
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  height: 100px;
-  background-color: black;
-  border-bottom: 1px solid seashell;
-  align-items: center;
-  
-}
-
-header img {
-  height: 100px;
-  padding-left: 10px;
-}
-
-nav {
-  text-align: right;
-  flex-grow: 1;
-  
-}
-
-nav span {
-  display: inline-block;
-  padding: 20px 10px;
-  
+  text-decoration: none;
 }
 
 
 
-/* Main Section */
 
-.main {
+/* Style Header Section and navbar*/
+
+.header {
+border-bottom: 1 px solid black;
+
+}
+
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 1.5rem;
+ }
+
+/* Hamburger styles*/
+
+.hamburger{
+  display: none;
+}
+
+.bar{
+
+display: block;
+width: 25px;
+height: 3px;
+margin: 5px auto;
+-webkit-transition: all 0.3s ease-in-out;
+transition: all ease-in-out;
+background-color: #101010;
+
+}
+
+/* basic styles for our other styles*/
+
+.nav-menu {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.nav-item{
+margin-left: 5rem;
+
+}
+
+.nav-link{
+  font-size: 2.1rem;
+  font-weight:400;
+  color: #101010;
+}
+
+.nav-link:hover{
+  color: #999;
+}
+
+.nav-logo{
+font-size: 2.1rem;
+font-weight: 500;
+color: #CC4C4C;
+
+
+}
+
+/* make it responsive with media queries*/
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: black;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+}
+
+
+
+
+
+
+
+/*store name section*/
+
+.main1{
   padding-top: 69px;
   opacity: 0.9;
-  width: 1400px;
+  width: 1200px;
   margin: auto;
-}
+  font-size: x-large;
+  }
 
-/* Mission Section */
-
-#mission {
-  height:1200px;
+#store{
   
-  padding-top: 70px;
+  width: 1200px;
+margin: auto;
+  padding-top: 30px;
+
 }
 
-/*#mission .content {
-  margin: auto;
-  background-color: black;
-  width: 100%;
-}*/
-
-#mission .flex-containerinfo{
-  width: 1400px;
-  margin: auto;
   
-}
-
-/*photo section pictures on index1.html*/
-
-.item1 {
-  padding: 10px;
- 
+  .item1{
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .item1 img{
+  height: 500px;
+  width: 300px;
+  margin: 10px;
+  display: block;
   border-style: solid;
   border-color: seashell;
   border-width: 1px;
-  flex-basis: 250px;
-  flex-direction: column;
-  justify-content: center;
   position: relative;
+  }
   
-}
-.item1 img {
-
-  height: 500px;
-  width: 300px;
-  display: flex;
-  margin: 0px;
- 
-}
-
-/*photo section pictures on index2.html*/
-
-.item3 {
-  padding: 10px;
- 
-  flex-basis: 250px;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  
-}
-.item3 img {
-
-  height: 300px;
-  width: 300px;
-  display: flex;
-  margin: 0px;
- 
-}
-
-
-
-.item4 {
-  padding: 10px;
- 
-  flex-basis: 250px;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  background-color: blue;
-}
-.item4.testify {
-
-  height: 400px;
-  width: 400px;
-  display: flex;
-  margin: 0px;
-  
-}
-
-/*text on index.html*/
-
-.text{
-  position: absolute;
-  top: 8px;
-  left: 16px;
-
-}
-
-.flex-container.info {
-  padding-top: 5px;
-  text-align: center;
- 
- 
-}
-/* Store Section */
-
-flex-container.items {
-padding-top: 5px;
-text-align: center;
-}
-
-#store {
-  height: 1200px;
- 
-  padding-top: 70px;
-}
-
-#store.flex-containeritems{
-  width: 1400px;
-  margin: auto;
- 
-  
-}
-
-.item2 {
-  padding: 10px;
-
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  
-}
-.item2 img {
-  
-  height: 800px;
-  width: 500px;
-  display: flex;
-  margin: 0px;
- 
-}
-.text1{
-  position: absolute;
- 
+  .text1{
+  position:absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform:translate(-50%, -50%)
+  }
+  
+
+
+/*mission statement section*/
+#mission{
+ 
+  width: 1200px;
+margin: auto;
+  padding-top: 70px;
+text-align: center;
+font-size: x-large;
+}
+
+.item2{
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.item2 .color{
+height: 550px;
+width: 500px;
+margin: 10px;
+display: block;
+border-style: solid;
+border-color: seashell;
+border-width: 1px;
+position: relative;
+background-color: black;
+}
+
+.text2{
+position:absolute;
+top: 50%;
+left: 50%;
+transform:translate(-50%, -50%)
+}
+
+.item7{
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+
+.item7 img{
+  height: 550px;
+  width: 500px;
+  margin: 10px;
+  display: block;
+  border-style: solid;
+  border-color: seashell;
+  border-width: 1px;
+  position: relative;
+
+
 }
 
 
-/* Form Section */
+.text7{
+position:absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%)
+}
+
+
+.item4{
+display: flex;
+flex-wrap: wrap;
+ padding: 5px;
+
+}
+
+
+.item4 img{
+  height: 350px;
+  width: 350px;
+  margin: 5px;
+ 
+  
+  }
+
+  .item5{
+    padding: 5px;
+
+    text-align: center;
+    color:blue;
+
+  }
+
+  .testify{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%)
+    }
+/*contact section*/
+
+#contact{
+ 
+  width: 1200px;
+text-align: center;
+  padding-top: 70px;
+
+}
+.item3{
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.item3 img{
+height: 600px;
+width: 300px;
+margin: 10px;
+display: block;
+border-style: solid;
+border-color: seashell;
+border-width: 1px;
+position: relative;
+}
+
+.text3{
+position:absolute;
+top: 50%;
+left: 50%;
+transform:translate(-50%, -50%)
+}
+
+footer{
+
+  text-align: center;
+}
+
+#contactus{
+  text-align:center;
+}
+
+/*form section*/
+
 form {
   /* Center the form on the page */
- 
   margin: 0 auto;
-  height: 500px;
-  width: 400px;
+  width: 500px;
   /* Form outline */
   padding: 1em;
   border: 1px solid #CCC;
@@ -240,14 +354,13 @@ label {
   text-align: right;
 }
 
-input, 
+input,
 textarea {
   /* To make sure that all text fields have the same font settings
      By default, textareas have a monospace font */
   font: 1em sans-serif;
 
   /* Uniform text field size */
-  
   width: 300px;
   box-sizing: border-box;
 
@@ -255,7 +368,7 @@ textarea {
   border: 1px solid #999;
 }
 
-input:focus, 
+input:focus,
 textarea:focus {
   /* Additional highlight for focused elements */
   border-color: #000;
@@ -266,7 +379,7 @@ textarea {
   vertical-align: top;
 
   /* Provide space to type some text */
-  height: 15em; 
+  height: 5em;
 }
 
 .button {
@@ -280,17 +393,352 @@ button {
   margin-left: .5em;
 }
 
+/*shopping cart section-nav bar*/
 
-/* Contact Section */
-
-#contact {
-  height: 200px;
+.dropdown {
+  
+  overflow: hidden;
+ float: left;
 }
 
-/* Footer Section */
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color:black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
 
-footer {
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  margin-top: 5px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 340px;
+ 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
   text-align: left;
-  padding-left: 20px;
 }
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+
+
+#myDIV{
+ text-align:center;
+}
+
+
+
+
+/* Make the image responsive*/
+
+
+ .btn:hover {
+  background-color: black;
+}
+
+ body {font-family: Arial, Helvetica, sans-serif;}
+
+
+
+/* Make the image responsive*/
+
+
+ .btn:hover {
+  background-color: black;
+}
+
+ /*Product section */
+
+.shop-items{
+ display: flex;
+ background-color: grey;
+ flex-wrap: wrap;
+  display: flex;
+
+}
+.shop-item{
+   padding: 5%;
+  flex-grow: 1;
+ flex-direction: column;
+  align-items: center;
+text-align: center;
+  display: inline-flex;
+}
+
+
+
+
+
+.shop-item-img{
+  max-width: 100%;
+ 
+}
+
+.shop-item-title{
+ font-weight: 400;
+  font-size: 28px;
+ position: absolute;
+ 
+}
+
+
+
+div.shop-item-price{
+font-size: 24px;
+  flex-grow: 1;
+  
+}
+
+.btn {
+color: seashell;
+  font-size:24px;
+  background-color: sienna;
+  margin-bottom: 0 auto;
+}
+
+
+@media (max-width: 920px) {
+  .shop-item {
+    flex: 1 21%;
+  }
+}
+  @media (max-width: 900px){
+/*Select the first two */
+.shop-items .shop-item:first-child, 
+.shop-items .shop-item:nth-child(2) {
+  flex: 2 46%;
+    /*grow 2 and take up 46% of page at 900px*/
+}
+  }
+
+@media (max-width: 600px) {
+  .shop-item {
+    flex: 1 46%;
+    /*grow 1 and take up 46% of page at 600px*/
+  }
+ 
+
+
+}
+
+
+.cart {
+
+  background-color: lightgrey;
+  min-width: 250px;
+min-height: 250px;
+     padding: 5px 5px;
+  border: 2px solid black;
+    background: lightgrey;
+    
+   
+}
+
+
+h2{
+  text-align: center;
+}
+.section-header{
+   font-family: "Arial";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.cart ,.shop-items {
+  
+  margin: 5px;
+}
+
+
+
+.cart-header {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin-right: 2.0em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 33%;
+}
+
+.cart-price {
+    width: 15%;
+   
+    color: #333;
+}
+
+.cart-quantity {
+    width: 68%;
+  overflow: hidden;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: 0.5em;
+    font-size: 1.0em;
+}
+
+.cart-item-image {
+    width: 70px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.checkout{
+  
+   text-align: end;
+    margin-top: 30px;
+    margin-right: 10px;
+  
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .1em;
+    font-weight: bold;
+  
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+ 
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 30px;
+ 
+}
+
+
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+
+.col1{
+   margin: 0px;
+  text-align: left;
+  
+}
+
+ .cart-tax-price {
+    color: #333;
+    font-size: 0.8em;
+  float: right;
+   
+}
+
+
+.cart-total-price {
+    color: #333;
+    font-size: 0.8em;
+ float: right;
+}
+
+.totals-value, .fee-totals-value, .tax-totals-value, .subtotal-totals-value, .tip-totals-value, .tip_pct-totals-value{
+   color: #333;
+    font-size: 0.9em;
+  float: right;
+  
+}
+
+table, tr, td {
+  border: 1px solid black;
+   border-collapse: collapse;
+}
+
+
+
+
+
+
+.flex-container{
+   display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  
+}
+
+.container content-section-left{
+  
+ 
+ 
+  flex: 50%;
+ 
+}
+
+.container content-section-right{
+   
+
+  flex: 50%;
+
+
+}
+
+
+
+
+footer  { flex: 1 100%; font-size: 30px;}
+
+
+
+
+  body {
+  background: url("https://images-na.ssl-images-amazon.com/images/I/714zBfO91PL._AC_SX355_.jpg");
+}
+
 
